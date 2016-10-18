@@ -17,21 +17,18 @@ header {
     background-size: cover;
     background-position: center center;
 }
+
 header:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(
-    to bottom, 
-    rgba(201,197,197,0.83) 0.5%,
-    rgba(9,14,63,1),
-    rgba(9,14,63,1),
-    rgba(0,0,0,1));
-  opacity: 0.6;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( to bottom, rgba(201, 197, 197, 0.83) 0.5%, rgba(9, 14, 63, 1), rgba(9, 14, 63, 1), rgba(0, 0, 0, 1));
+    opacity: 0.6;
 }
+
 header .overlay {
     float: right;
     width: 30%;
@@ -56,7 +53,7 @@ header .overlay {
     font-weight: 400;
 }
 
- .txt-header {
+.txt-header {
     font-size: 14px;
     margin-top: 8px;
     font-weight: 100;
@@ -68,9 +65,7 @@ header .overlay {
     padding-right: 8px;
     width: 32%;
     cursor: pointer;
- }
-
-
+}
 
 nav {
     position: absolute;
