@@ -112,8 +112,21 @@ nav p {
     text-align: center;
 }
 
+
 .container {
     margin: auto;
     width: 100%;
-    height: 1600px;
+    height: 900px;
+}
+
+footer {
+    display: inline-block;
+}
+
+#p-footer {
+    color: #041c54;
+    font-size: 1.4em;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
 }
