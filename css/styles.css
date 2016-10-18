@@ -3,36 +3,108 @@
     padding: 0;
 }
 
-html, body {
-	height: 100%;
+html,
+body {
+    height: 100%;
     font-family: 'Karla Regular', sans-serif;
 }
 
-.navBar {
-	position: absolute;
+header {
+    background: url('../img/image1.jpg');
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom, 
+    rgba(201,197,197,0.83) 0.5%,
+    rgba(9,14,63,1),
+    rgba(9,14,63,1),
+    rgba(0,0,0,1));
+  opacity: 0.6;
+}
+header .overlay {
+    float: right;
+    width: 30%;
+    margin-top: 360px;
+    color: #ffffff;
+    z-index: 1;
+    opacity: .99;
+}
+
+.arrow {
+    width: 9px;
+    height: 47px;
+    margin: 0 auto;
+    padding-top: 800px;
+    z-index: 99;
+    opacity: .99;
+}
+
+.h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+ .txt-header {
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 100;
+}
+
+.hdr-boxes {
+    float: left;
+    margin: 12px 14px auto;
+    margin-left: 0;
+    padding: 12px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    width: 25%;
+    font-size: 14px;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
     width: 100%;
-    height: 40px;
+    height: 60px;
+    bottom: 0;
     font-size: 1.5em;
     font-weight: 100;
-    margin-top: 20px;
     padding-left: 28px;
-    line-height: 24px;
-	z-index: 99;
-    color: #015d9b;
-    transition:  all 0.5s ease;
+    line-height: 60px;
+    color: #041c54;
+    background-color: #ffffff;
+    transition: all;
     -webkit-box-shadow: 3px 3px 3px rgba(224, 224, 224, 0.8);
     -moz-box-shadow: 3px 3px 3px rgba(224, 224, 224, 0.8);
     box-shadow: 2px 2px 2px rgba(224, 224, 224, 0.8);
 }
 
-.navBar.hidden {
-	transform: translate3d(0, -100%, 0);
+.navbar-fixed {
+    position: fixed;
+    top: 0;
 }
 
-.navBar p {
-	display:  inline-block;
+nav p {
+    display: inline-block;
     float: left;
 }
-.navBar ul {
+
+nav ul {
     float: right;
+}
+
+.container {
+    height: 1200px;
 }
