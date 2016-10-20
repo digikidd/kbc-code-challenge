@@ -244,16 +244,30 @@ li {
 }
 
 .fadeIn {
-    -webkit-animation: animat_show 1s;
-    animation: animat_show 1s;
+    -webkit-animation: fade_in 1s;
+    animation: fade_in 1s ease-in-out;
     visibility: visible !important;
+    animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes animat_show {
+@-webkit-keyframes fade_in {
     0% {
         opacity: 0
     }
     100% {
         opacity: 1
     }
+}
+
+.fadeOut {
+    -webkit-animation: fade_out 3s;
+    animation: fade_out 2s ease-in;
+    visibility: hidden !important;
+    animation-fill-mode: forwards;
+    animation-delay:2s;
+}
+
+@-webkit-keyframes fade_out {
+     from {opacity :1;}
+    to {opacity :0;}
 }

@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-    	showImages('#girl');
+    	showImages();
 
         var height = $(window).height();
 
@@ -27,27 +27,20 @@ $(document).ready(function() {
     });
 
 
-    function showImages(e) {
-        var windowHeight = jQuery(window).height();
-        $(e).each(function() {
-            var thisPos = $(this).offset().top;
-            console.log(this);
-
-            var topOfWindow = $(window).scrollTop();
-            if (topOfWindow + windowHeight - 200 > thisPos) {
-                $(this).addClass("fadeIn");
-
-            }
-            else {
-            	$(this).removeClass('fadeIn');
-            }
-
-        });
+    function showImages() {
+        var scroll = $(window).scrollTop();
+      
+        if (scroll >= 400) {
+        	
+        	$("#girl").removeClass("fadeOut");
+        	 $("#girl").addClass("fadeIn");
+        }
+        else {
+        	$("#girl").addClass("fadeOut");
+        	$("#girl").removeClass("fadeIn");
+        	 
+        }
     };
-    
-    showImages('#girl');
-
-
     
 
 
