@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-    	showImages();
+        showImages();
 
         var height = $(window).height();
 
@@ -29,19 +29,16 @@ $(document).ready(function() {
 
     function showImages() {
         var scroll = $(window).scrollTop();
-      
-        if (scroll >= 400) {
-        	
-        	$("#girl").removeClass("fadeOut");
-        	 $("#girl").addClass("fadeIn");
-        }
-        else {
-        	$("#girl").addClass("fadeOut");
-        	$("#girl").removeClass("fadeIn");
-        	 
+
+        if (scroll > 400) {
+    		$("#girl").addClass("fadeIn");
+            $("#girl").removeClass("fadeOut");
+        } 
+        else {      	
+            $("#girl").addClass("fadeOut"); 
         }
     };
-    
+
 
 
 });
